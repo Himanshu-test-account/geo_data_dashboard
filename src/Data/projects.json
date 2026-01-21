@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "projectName": "Road Construction Project",
+    "location": "Mumbai",
+    "status": "active",
+    "lastUpdated": "2024-01-10",
+    "latitude": 19.076,
+    "longitude": 72.8777
+  },
+  {
+    "id": 2,
+    "projectName": "Water Pipeline Project",
+    "location": "Delhi",
+    "status": "completed",
+    "lastUpdated": "2024-01-05",
+    "latitude": 28.7041,
+    "longitude": 77.1025
+  },
+  {
+    "id": 3,
+    "projectName": "Metro Rail Expansion",
+    "location": "Bangalore",
+    "status": "pending",
+    "lastUpdated": "2024-01-12",
+    "latitude": 12.9716,
+    "longitude": 77.5946
+  }
+]
