@@ -1,29 +1,51 @@
-# Geo Data Dashboard
-  
-This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
- You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
-  
-This project is connected to the Convex deployment named [`clean-panther-199`](https://dashboard.convex.dev/d/clean-panther-199).
-  
-## Project structure
-  
-The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
-  
-The backend code is in the `convex` directory.
-  
-`npm run dev` will start the frontend and backend servers.
+Geo Data Dashboard
 
-## App authentication
+A Geo Data Dashboard application with a modern frontend and backend architecture.
 
-Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
+Project structure
 
-## Developing and deploying your app
+The project is organized into two main parts:
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
-* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
+Frontend
+Located in the app directory and built with Vite
+.
 
-## HTTP API
+Backend
+Located in the backend directory and contains all server-side logic, APIs, and data handling.
 
-User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
+Development
+
+To start the application in development mode:
+
+npm run dev
+
+
+This command starts both the frontend and backend development servers with hot reloading enabled.
+
+Authentication
+
+The application currently uses a lightweight authentication mechanism suitable for development and prototyping.
+
+Before deploying to production, consider implementing a production-ready authentication solution such as:
+
+Email/password authentication
+
+OAuth providers
+
+Single Sign-On (SSO)
+
+Developing and deploying the app
+
+Use standard Vite workflows for frontend development.
+
+Configure environment variables appropriately for each environment.
+
+Validate and secure backend APIs before production deployment.
+
+Follow general best practices for performance, security, and maintainability.
+
+HTTP API
+
+Application-specific HTTP routes are defined in the backend router files.
+
+Routing is structured to keep authentication logic separate from domain-specific endpoints, making the system easier to reason about, test, and extend
